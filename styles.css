@@ -1,16 +1,98 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    text-align: center;
     list-style: none;
 }
 
-body{
+body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(76, 126, 0);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(6, 23, 1) 100%);
 }
 
-img, picture{
+body>* {
+    margin-top: 1rem;
+}
+
+span {
+    position: relative;
+    bottom: 1rem;
+}
+
+img,
+picture {
     max-width: 100%;
     display: block;
+}
+
+.header h1 {
+    font-family: 'Handjet', cursive;
+    font-weight: 300;
+    font-size: 128px;
+}
+
+button{
+    background-color: black;
+    color: rgb(76, 126, 0);
+    border: 2px dashed rgb(76, 126, 0);
+    padding: 1rem 2rem;
+}
+
+.header span{
+    font-size: 4rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.controls {
+    margin-right: 2rem;
+}
+
+h3 {
+    font-family: 'Handjet';
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.etch {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    min-width: 560px;
+}
+
+.main {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.cell {
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color: rgb(76, 126, 0);
+    border: 1px solid black;
+}
+
+.footer {
+    font-family: 'Handjet';
+}
+
+.hide{
+    display: none !important;
+}
+
+.header .cursor{
+    left: 1rem;
+    font-size: 6rem;
 }
