@@ -16,6 +16,7 @@ body {
     color: rgb(76, 126, 0);
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(6, 23, 1) 100%);
+    justify-content: space-between;
 }
 
 body>* {
@@ -46,10 +47,19 @@ button{
     padding: 1rem 2rem;
 }
 
+button:hover{
+    background-color: rgba(76, 126, 0, .5);
+}
+
+.active{
+    background: rgba(76, 126, 0, .3);
+}
+
 .header span{
     font-size: 4rem;
     font-weight: bold;
     display: inline-block;
+    margin-top: 6rem;
     margin-right: 28px;
 }
 
@@ -61,7 +71,7 @@ h3 {
     font-family: 'Handjet';
     font-size: 2rem;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
@@ -74,17 +84,33 @@ h3 {
 
 .main {
     display: flex;
-    margin-top: 6rem;
+    margin-bottom: 8rem;
 }
 
 .cell {
-    min-width: 2rem;
-    min-height: 2rem;
     background-color: rgb(76, 126, 0);
     border: 1px solid black;
 }
 
+.SM {
+
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+.MD {
+
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
+.LG{
+    min-width: .5rem;
+    min-height: .5rem;
+}
+
 .footer {
+    margin-bottom: 4rem;
     font-family: 'Handjet';
 }
 
@@ -95,4 +121,17 @@ h3 {
 .header .cursor{
     left: 1rem;
     font-size: 6rem;
+}
+
+#btn-clear{
+    margin-top: 2.5rem;
+}
+
+.controls{
+}
+
+.controls button{/* 
+    padding: .8rem 1.2rem;
+    position: relative;
+    top: -2rem; */
 }
